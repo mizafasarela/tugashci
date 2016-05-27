@@ -56,11 +56,7 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                    </a>
-                </li>
+               
              
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -182,7 +178,7 @@
                                             <td class="center">Obat Batuk</td>
 											<td>
 											<a href="#" class="btn btn-success" role="button">Edit</a>
-											<a href="../Apotek/ObatHapus.html" class="btn btn-danger" role="button">Hapus</a>
+											<a class="btn btn-danger ntn-xs" data-toggle="modal" data-target="#myModal">Hapus</a>
 											</td>
 											</tr>
 											
@@ -325,6 +321,35 @@
     </div>
     <!-- /#wrapper -->
 
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Hapus Obat</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           Apakah Anda Yakin Ingin Menghapus Obat dari Database ?
+                                        </div>
+										
+										
+                                    </form>
+                                
+                                <!-- /.col-lg-6 (nested) -->
+                            
+                            <!-- /.row (nested) -->
+                        
+                                        <div class="modal-footer">
+                                            <a href="button" class="btn btn-default" data-dismiss="modal">Batal</a>
+											<a href="ObatHapus.html" class="btn btn-info">Hapus</a>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+			</div>
+	
     <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
